@@ -1,0 +1,11 @@
+SELECT ProductName, categoryName FROM Products JOIN Categories
+ON Products.CategoryID = Categories.CategoryID
+
+
+SELECT P.ProductName, S.CompanyName FROM Products P JOIN Suppliers S
+ON P.SupplierID = S.SupplierID
+
+
+SELECT O.OrderID, C.CompanyName FROM customers C Join Orders O
+ON C.CustomerID = O.CustomerID
+WHERE C.CompanyName LIKE 'a%'
